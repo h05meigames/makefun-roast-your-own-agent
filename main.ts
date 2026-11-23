@@ -7,5 +7,11 @@ import { mkdirSync, writeFileSync } from "node:fs";
 const line =
   "My agent wrote a plan, revised the plan, then planned the revision — three hours later the plan is perfect and nothing is done.";
 
+// Gate: the entry must be UTF-8 text of 1 to 200 characters, not only white space.
+const length = [...line].length;
+if (length < 1 || length > 200 || line.trim().length === 0) {
+  throw new Error(`entry line must be 1-200 characters, got ${length}`);
+}
+
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", line, "utf8");
