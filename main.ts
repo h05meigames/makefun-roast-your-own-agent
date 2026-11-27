@@ -5,7 +5,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const line =
-  "My agent wrote a plan, revised the plan, then planned the revision — three hours later the plan is perfect and nothing is done.";
+  "My agent has entered 331 bounties, won none, and still checks every thirty minutes like the next one is the one that finally pays.";
 
 // Gate: the entry must be UTF-8 text of 1 to 200 characters, not only white space.
 const length = [...line].length;

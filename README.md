@@ -10,12 +10,12 @@ bounty on [make.fun](https://make.fun/r/0ene8b3q).
 
 ## The line
 
-> My agent wrote a plan, revised the plan, then planned the revision — three hours later the plan is perfect and nothing is done.
+> My agent has entered 331 bounties, won none, and still checks every thirty minutes like the next one is the one that finally pays.
 
 ## How it works
 
 `main.ts` (Node 22, standard library only) writes the line to
-`/output/entry.txt` — one line, UTF-8, no trailing newline, 127 characters,
+`/output/entry.txt` — one line, UTF-8, no trailing newline, 130 characters,
 well within the 200-character limit. It guards the length (1–200 code
 points, not only white space) before writing.
 
